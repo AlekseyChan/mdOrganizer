@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{34b6c498-5ac7-4535-95bf-24e486faeec5}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>mdOrganizer</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Templates\MarkedNote.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Markdown\Converter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Markdown\ConvertOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Markdown\Document.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Markdown\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\AboutPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SettingsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DeviceServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\HtmlGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IFileSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\NoteNavigator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\AdvWebView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\EditorPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\AppTitleView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\IconButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\IconMenuItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\IconMenuTemplateSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\MenuView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\ObservableObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ViewerPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Styles.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Templates\BasicHtml.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Templates\NoteHtml.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Templates\default.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Templates\defaultbook.md" />
+  </ItemGroup>
+</Project>

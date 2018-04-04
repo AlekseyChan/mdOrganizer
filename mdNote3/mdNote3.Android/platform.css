@@ -1,0 +1,106 @@
+﻿body {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size:{BaseSize}px;
+}
+
+h1.mdNote {
+    font-size: 115%;
+    font-weight: bold;
+    border-top: 1px solid #808080;
+    padding: 5px;
+    min-height: 30px;
+}
+
+a.float-button {
+    position: fixed;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    bottom: 0px;
+    right: 0px;
+    width: 52px;
+    height: 52px;
+    z-index: 9999;
+    background: url('add.png') no-repeat;
+    background-size: 52px;
+    background-position: 0 0;
+}
+
+ul.mdNote, li.mdNote {
+    list-style: none;
+    padding: 0px;
+}
+
+li.mdNote {
+    border: solid 1px #00263D;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+div.title {
+    background-color: #00263D;
+    padding: 5px;
+    min-height: 30px;
+}
+
+.marked{
+    background-color: firebrick !important;
+    color: white;
+    font-style:italic;
+}
+
+a.title {
+    color: white;
+    font-size:{BaseSize}px;
+    text-decoration: none;
+    width: 100%;
+    display:block;
+   margin-right:40px;
+}
+
+a.button {
+    float: right;
+    width: 30px;
+    height: 30px;
+    color: #00263D;
+    margin-left:8px;
+    font-size:{BaseSize}px;
+    text-decoration: none;
+    display: block;
+}
+
+.title > a.edit {
+    background: url('edit_white.png') no-repeat;
+    background-size: 30px;
+    background-position: 0 0;
+}
+.title > a.delete {
+    background: url('trash_white.png') no-repeat;
+    background-size: 30px;
+    background-position: 0 0;
+}
+.title > a.share {
+    background: url('share_white.png') no-repeat;
+    background-size: 30px;
+    background-position: 0 0;
+}
+h1.mdNote > a.edit {
+    background: url('edit_black.png') no-repeat;
+    background-size: 30px;
+    background-position: 0 0;
+}
+h1.mdNote > a.delete {
+    background: url('trash.png') no-repeat;
+    background-size: 30px;
+    background-position: 0 0;
+}
+h1.mdNote > a.share {
+    background: url('share.png') no-repeat;
+    background-size: 30px;
+    background-position: 0 0;
+}
+
+.note-content {
+    margin-left:10px;
+    margin-right:10px;
+}
